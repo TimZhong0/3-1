@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+class People{
+
+public:
+    void in(){
+        cin>>Name>>Age>>Height>>Weight;
+        cin>>w>>h;
+        Height+=h;
+        Weight+=w;
+    }
+
+//    People(){
+////        Height+=h;
+////        Weight+=w;
+//    }
+    void show(){
+        cout<<"姓名 "<<Name<<endl;
+        cout<<"年龄 "<<Age<<endl;
+        cout<<"身高 "<<Height<<endl;
+        cout<<"体重 "<<Weight;
+    }
+private:
+    string Name;
+    int Age,w,h;
+    int Weight,Height;
+};
+
+
+
+int main(){
+    People people;
+    people.in();
+    people.show();
+    return 0;
+}
